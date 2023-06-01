@@ -1,0 +1,8 @@
+import{a as e,F as p}from"./jsx-runtime-daf140a7.js";import{r as m}from"./index-a06da399.js";import{T as f,$ as g}from"./Tooltip-8eb03a31.js";import"./_commonjsHelpers-042e6b4d.js";import"./extends-98964cd2.js";const r=m.forwardRef(({children:o,asChild:c=!1,tooltip:a,...d},u)=>{const n=c?g:"button";return e(p,{children:a!==void 0?e(f,{content:a,sideOffset:2,arrow:{width:10,height:5},asChild:!0,children:e(n,{ref:u,...d,className:"py-2 px-3 inline-flex justify-center items-center gap-2 rounded-md border border-transparent font-semibold bg-blue-500 text-white hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 transition-all text-sm dark:focus:ring-offset-gray-800",children:o})}):e(n,{children:o})})});r.displayName="Button";try{r.displayName="Button",r.__docgenInfo={description:"",displayName:"Button",props:{asChild:{defaultValue:{value:"false"},description:"",name:"asChild",required:!1,type:{name:"boolean"}},tooltip:{defaultValue:null,description:"",name:"tooltip",required:!1,type:{name:"string"}}}}}catch{}const B={title:"Example/Button",component:r,parameters:{layout:"centered"},argTypes:{}},t={args:{children:e("p",{children:"Button"}),tooltip:"I am a button!",asChild:!0}};var s,i,l;t.parameters={...t.parameters,docs:{...(s=t.parameters)==null?void 0:s.docs,source:{originalSource:`{
+  args: {
+    children: <p>Button</p>,
+    tooltip: "I am a button!",
+    asChild: true
+  }
+}`,...(l=(i=t.parameters)==null?void 0:i.docs)==null?void 0:l.source}}};const C=["Default"];export{t as Default,C as __namedExportsOrder,B as default};
+//# sourceMappingURL=button.stories-4028c5b0.js.map
