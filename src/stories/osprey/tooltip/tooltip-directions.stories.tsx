@@ -2,12 +2,11 @@ import type { Meta, StoryObj } from "@storybook/react";
 import { Tooltip as TooltipComponent } from "../../../components/overlays/tooltip/view/Tooltip";
 
 const meta = {
-  title: "Example/Tooltip",
+  title: "Components/Tooltip",
   component: TooltipComponent,
   parameters: {
     layout: "centered",
   },
-  argTypes: {},
 } satisfies Meta<typeof TooltipComponent>;
 
 export default meta;
