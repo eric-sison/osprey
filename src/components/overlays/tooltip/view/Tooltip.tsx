@@ -40,13 +40,13 @@ export const Tooltip = forwardRef<React.ElementRef<typeof TooltipPrimitive.Conte
             <TooltipPrimitive.Content
               ref={ref}
               {...props}
-              className="bg-zinc-800/95 px-2 py-1 rounded z-20"
+              className="bg-gray-800/95 px-2 py-1 rounded z-20 dark:bg-gray-800/95"
               asChild={false}
             >
-              <p className="text-xs text-zinc-200 font-semibold">{content}</p>
+              <p className="text-xs text-gray-200 font-medium">{content}</p>
               {arrow && (
                 <TooltipPrimitive.Arrow
-                  className="fill-zinc-800/95"
+                  className="fill-gray-800/95 dark:fill-gray-800/95"
                   width={arrow.width}
                   height={arrow.height}
                   asChild={false}
