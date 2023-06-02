@@ -23,6 +23,7 @@
     },
     "typeRoots": ["node_modules/@types", "src/index.d.ts"]
   },
-  "include": ["src"],
+  "include": ["src/**/*.ts", "src/**/*.tsx"],
+  "exclude": ["node_modules", "dist"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }
