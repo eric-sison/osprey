@@ -23,6 +23,11 @@ export default defineConfig(() => ({
     },
     rollupOptions: {
       external: ["react", "react-dom"],
+      output: {
+        globals: {
+          react: "React",
+        },
+      },
     },
     optimizeDeps: {
       exclude: Object.keys(packageJson.peerDependencies),
