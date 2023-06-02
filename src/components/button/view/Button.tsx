@@ -1,11 +1,7 @@
-import { ButtonHTMLAttributes, forwardRef } from "react";
+import { forwardRef } from "react";
 import { Slot } from "@radix-ui/react-slot";
 import { Tooltip } from "../../overlays/tooltip/view/Tooltip";
-
-export type ButtonProps = ButtonHTMLAttributes<HTMLButtonElement> & {
-  asChild?: boolean;
-  tooltip?: string;
-};
+import { ButtonProps } from "../utils/props";
 
 export const Button = forwardRef<HTMLButtonElement, ButtonProps>(
   ({ children, asChild = false, tooltip, ...props }, ref) => {
