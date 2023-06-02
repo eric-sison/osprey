@@ -7,7 +7,7 @@ const meta = {
   parameters: {
     layout: "centered",
   },
-
+  tags: ["autodocs"],
   argTypes: {
     children: {
       description: "A react node to render where the tooltip will be triggered.",
@@ -139,18 +139,14 @@ const meta = {
         "An optional arrow element to render alongside the tooltip. This can be used to help visually link the trigger with the Tooltip.Content. Must be rendered inside Tooltip.Content.",
     },
   },
-  tags: ["autodocs"],
 } satisfies Meta<typeof TooltipComponent>;
 
 export default meta;
 type Story = StoryObj<typeof meta>;
 
-/**
- * A popup that displays information related to an element when the element receives keyboard focus or the mouse hovers over it.
- */
 export const Default: Story = {
   args: {
-    children: <span className="animate-pulse hover:animate-none text-lg font-bold">Hover on me</span>,
+    children: <span className="text-lg font-bold">Hover on me</span>,
     content: "This is a sample tooltip",
     arrow: { width: 10, height: 5 },
   },
