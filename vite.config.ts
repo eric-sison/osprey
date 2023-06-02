@@ -20,6 +20,9 @@ export default defineConfig(() => ({
       formats: ["es", "cjs"],
       fileName: (format) => `osprey.${format === "cjs" ? "cjs" : "es.js"}`,
     },
+    rollupOptions: {
+      external: ["react", "react-dom"],
+    },
     optimizeDeps: {
       exclude: Object.keys(packageJson.peerDependencies),
     },
