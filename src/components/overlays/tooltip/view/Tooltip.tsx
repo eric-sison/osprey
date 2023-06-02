@@ -2,6 +2,9 @@ import * as TooltipPrimitive from "@radix-ui/react-tooltip";
 import React, { forwardRef } from "react";
 import { TooltipProps } from "../utils/props";
 
+/**
+ * A popup that displays information related to an element when the element receives keyboard focus or the mouse hovers over it.
+ */
 export const Tooltip = forwardRef<React.ElementRef<typeof TooltipPrimitive.Content>, TooltipProps>(
   (
     {
