@@ -11,6 +11,7 @@ export default defineConfig(() => ({
     tsConfigPaths(),
     dts({
       include: ["src"],
+      insertTypesEntry: true,
     }),
   ],
   build: {
