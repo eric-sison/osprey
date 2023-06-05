@@ -26,7 +26,7 @@ export default meta;
 type Story = StoryObj<typeof meta>;
 
 /**
- * Contains all the parts of a popover.
+ * The button that toggles the popover. By default, the `Popover.Content` will position itself against the trigger.
  */
 export const PopoverTrigger: Story = {
   render: (args) => {
